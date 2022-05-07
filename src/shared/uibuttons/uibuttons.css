@@ -10,6 +10,10 @@
   font-weight: bold;
   opacity: 0.8;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .uibutton:active {
@@ -42,4 +46,26 @@
   background-color: #ccc;
   color: #999;
   box-shadow: none;
+}
+
+/****** Floating button ******/
+
+.uibutton--floating {
+  /* Positioning the button */
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  border-radius: 50%;
+  font-size: 2.5em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.5em;
+}
+
+.uibutton__container {
+  position: relative;
+}
+
+.uibutton__appcontainer > div {
+  transform: translateZ(0);
 }
