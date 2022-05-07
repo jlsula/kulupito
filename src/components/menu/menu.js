@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./menu.module.scss";
 // Icons
 import { MdViewList } from "react-icons/md";
@@ -8,13 +9,19 @@ function Menu() {
   return (
     <div className={styles.menu}>
       <div>
-        <MdViewList size={28} />
+        <Link to="/">
+          <MdViewList size={28} />
+        </Link>
       </div>
       <div>
-        <MdTimeline size={28} />
+        <Link to="/stats">
+          <MdTimeline size={28} />
+        </Link>
       </div>
       <div>
-        <MdSettings size={28} />
+        <Link to="/settings">
+          <MdSettings size={28} />
+        </Link>
       </div>
     </div>
   );
