@@ -1,5 +1,6 @@
 import styles from "./item.module.scss";
 import { MdNavigateNext } from "react-icons/md";
+import { Link } from "react-router-dom";
 function Item(props) {
   const locale = "fi-FI";
   const paymentDate = new Date(props.data.paymentDate).toLocaleDateString(
@@ -37,7 +38,9 @@ function Item(props) {
         </div>
       </div>
       <div className={styles.item_edit}>
-        <MdNavigateNext size={28} />
+        <Link to={"/edit/" + props.data.id}>
+          <MdNavigateNext size={28} />
+        </Link>
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+$container-padding: 2rem;
+
 /****** HEADER ******/
 $header-bg: #0285ee;
 $header-text: #ffffff;
@@ -22,3 +24,13 @@ $item-edit-width: 2rem;
 $menu-bg: #000;
 $menu-text: #ffffff;
 $menu-height: $header-height;
+
+/********* FORM *************/
+$form-item-margin: 0.5rem 0.3rem;
+$form-input-border: #999999;
+$form-input-radius: 0.3rem;
+$form-input-padding: 0.5rem;
+$form-input-fontsize: 1.2rem;
+
+$form-label-fontsize: 0.8rem;
+$form-label-margin-bottom: 0.5rem;
